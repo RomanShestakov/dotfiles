@@ -60,9 +60,9 @@ prompt_git() {
 }
 
 if tput setaf 1 &> /dev/null; then
-	tput sgr0; # reset colors
+	# tput sgr0; # reset colors
 	bold=$(tput bold);
-	reset=$(tput sgr0);
+	# reset=$(tput sgr0);
 	# Solarized colors, taken from http://git.io/solarized-colors.
 	black=$(tput setaf 0);
 	blue=$(tput setaf 33);
@@ -104,7 +104,7 @@ else
 fi;
 
 # Set the terminal title to the current working directory.
-PS1="\[\033]0;\w\007\]";
+# PS1="\[\033]0;\w\007\]";
 PS1+="\[${bold}\]\n"; # newline
 PS1+="\[${userStyle}\]\u"; # username
 PS1+="\[${white}\] at ";
