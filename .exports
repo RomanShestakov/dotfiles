@@ -34,5 +34,5 @@ export PATH=$ERL_TOP/bin:$PATH;
 # add conda
 export PATH=$ERL_TOP/bin:$PATH;
 
-# packer
-export PATH=/usr/local/packer:$PATH
+# # packer
+# export PATH=/usr/local/packer:$PATH
