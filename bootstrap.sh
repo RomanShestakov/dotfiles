@@ -1,14 +1,40 @@
 #!/usr/bin/env bash
+# Argument = -f -d destination
+
+usage() {
+    cat << EOF
+usage: $0 options
+This script will copy dotfiles to ~
+
+OPTIONS:
+-h Show this message
+-f Force
+-d Destination path
+
+EOF
+}
+
+FORCE=0
+DEST=~
+while getopts "hfd:" OPTION
+do
+    case $OPTION in
+        h)
+            usage
+            exit 1
+            ;;
+        f)
+            FORCE=1
+            ;;
+        d)
+            DEST=$OPTARG
+            ;;
+    esac
+done
 
 cd "$(dirname "${BASH_SOURCE}")";
 
 echo "current dir: $(pwd)"
-
-if [ -z "$1" ]; then
-    DEST=~
-else
-    DEST="$1"
-fi
 
 git pull origin master;
 
@@ -20,7 +46,7 @@ function doIt() {
 	source ~/.bash_profile;
 }
 
-if [ "$1" == "--force" -o "$1" == "-f" ]; then
+if [ "$FORCE" == 1 ]; then
 	doIt;
 else
 	read -p "This may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1;
