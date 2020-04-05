@@ -1,1 +1,0 @@
-export CFLAGS="-DOPENSSL_NO_EC=1"
