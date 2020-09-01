@@ -47,6 +47,9 @@ complete -W "NSGlobalDomain" defaults;
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
 
+# set ulimit so core dumps could be generated
+ulimit -c unlimited
+
 # conda completion
 # conda install argcomplete
 # $ eval "$(register-python-argcomplete conda)
