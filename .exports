@@ -28,11 +28,11 @@ export LESS_TERMCAP_md="${yellow}";
 export MANPAGER='less -X';
 
 # root of erlang install
-export ERL_TOP=/usr/local/lib/erlang
-export PATH=$ERL_TOP/bin:$PATH;
+#export ERL_TOP=/usr/local/lib/erlang
+#export PATH=$ERL_TOP/bin:$PATH;
 
 # add conda
-export PATH=$ERL_TOP/bin:$PATH;
+#export PATH=$ERL_TOP/bin:$PATH;
 
 # # packer
 # export PATH=/usr/local/packer:$PATH
