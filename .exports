@@ -36,3 +36,6 @@ export MANPAGER='less -X';
 
 # # packer
 # export PATH=/usr/local/packer:$PATH
+
+#
+export LD_LIBRARY_PATH=/usr/local/lib
