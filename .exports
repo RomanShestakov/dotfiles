@@ -29,6 +29,9 @@ export MANPAGER='less -X';
 
 # root of erlang install
 #export ERL_TOP=/usr/local/lib/erlang
+export ERLANG_HOME=/snap/erlang/current/usr/lib/erlang
+
+
 #export PATH=$ERL_TOP/bin:$PATH;
 
 # add conda
