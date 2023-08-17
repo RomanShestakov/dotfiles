@@ -31,6 +31,8 @@ export MANPAGER='less -X';
 #export ERL_TOP=/usr/local/lib/erlang
 export ERLANG_HOME=/usr/local/lib/erlang
 
+export ERL_AFLAGS="+pc unicode -kernel shell_history enabled"
+
 #export PATH=$ERL_TOP/bin:$PATH;
 
 # add conda
