@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Argument = -f -d destination
 
+
 usage() {
     cat << EOF
 usage: $0 options
