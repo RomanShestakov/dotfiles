@@ -30,8 +30,6 @@ export MANPAGER='less -X';
 # root of erlang install
 #export ERL_TOP=/usr/local/lib/erlang
 #export ERLANG_HOME=/usr/local/lib/erlang
-# using xfox
-export ERLANG_HOME=/home/romanshestakov/.version-fox/temp/1740355200-43286/erlang
 
 export ERL_AFLAGS="+pc unicode -kernel shell_history enabled"
 
