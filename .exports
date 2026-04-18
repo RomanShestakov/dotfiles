@@ -41,6 +41,7 @@ export ERL_AFLAGS="+pc unicode -kernel shell_history enabled"
 # # packer
 # export PATH=/usr/local/packer:$PATH
 
-#
 export LD_LIBRARY_PATH=/usr/local/lib
 
+# add claude-code to PATH
+export PATH=$HOME/.local/bin:$PATH
