@@ -43,3 +43,4 @@ export ERL_AFLAGS="+pc unicode -kernel shell_history enabled"
 
 #
 export LD_LIBRARY_PATH=/usr/local/lib
+
